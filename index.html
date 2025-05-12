@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Guessing Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>Welcome to Makayla's Number Guessing Game!</h1>
+        <p>Guess a number between 1 and 1,000. You have 5 attempts to guess the number. Good luck!</p>
+        <p>If you are closer to the number, you will be given an indication of hot or warm.</p>
+        <p>If you are far from the number, you will be given an indication of cold.</p>
+       
+        <div id="game">
+            <input type="number" id="guessInput" placeholder="Enter your guess" min="1" max="1000">
+            <button id="submitGuess">Submit Guess</button>
+            <p id="feedback"></p>
+            <p id="hint"></p>
+            <p id="attemptsLeft"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
